@@ -1,0 +1,20 @@
+cff-version: 1.2.0
+message: "使用本项目代码或数据时，请引用本项目及后续正式论文。"
+title: "视觉内容心理效应量化测评系统：AIGC视觉内容心理影响力测评基准与工具开发"
+type: software
+authors:
+  - family-names: "魏"
+    given-names: "渤函"
+  - family-names: "赵"
+    given-names: "钰"
+  - family-names: "罗"
+    given-names: "祥悦"
+version: "1.4.3"
+date-released: "2026-08-03"
+repository-code: "https://github.com/Clara0329/Ad-Evaluation"
+keywords:
+  - AIGC
+  - visual content evaluation
+  - advertising psychology
+  - explainable AI
+  - visual saliency

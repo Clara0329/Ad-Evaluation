@@ -1,0 +1,55 @@
+# Python
+__pycache__/
+*.py[cod]
+*.so
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+env/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Models and caches
+models/**/*.pth
+models/**/*.pt
+models/**/*.bin
+models/**/*.safetensors
+models/**/snapshots/
+models/**/blobs/
+.cache/
+.huggingface/
+.paddlex/
+
+# Runtime outputs
+outputs/
+logs/
+*.log
+batch_summary_*.json
+
+# Local experimental workspaces
+evaluation_*/
+archive/
+code_backup_*/
+baseline/
+*_results/
+*_run.log
+*.tar.gz
+*.zip
+
+# Private/local datasets
+# Keep README, split files and explicitly selected public samples.
+dataset/AIGC_images/**
+!dataset/AIGC_images/.gitkeep
+!dataset/AIGC_images/sample/**
+data/
+images/
+
+# Office temporary files
+~$*.docx
+~$*.xlsx
