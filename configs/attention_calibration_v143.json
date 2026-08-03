@@ -1,0 +1,334 @@
+{
+  "version": "transalnet_v1.4.3-attention-parallel",
+  "method": "quantile_mapping",
+  "candidate_scope": "attention_only",
+  "scoring_integration": false,
+  "minimum_scene_sample": 20,
+  "training_sample_size": 288,
+  "validation": {
+    "method": "5-fold scene-stratified out-of-fold validation",
+    "sample_size": 288,
+    "attention_delta_mean": -0.0764,
+    "attention_delta_median": 0.0,
+    "attention_delta_min": -8.0,
+    "attention_delta_max": 9.0,
+    "attention_abs_ge_10": 0,
+    "total_delta_mean": -0.0153,
+    "total_abs_ge_2": 0
+  },
+  "global_mapping": {
+    "input_metric": "center_saliency_ratio",
+    "target_metric": "legacy_center_focus",
+    "quantiles": [
+      0.0,
+      0.05,
+      0.1,
+      0.25,
+      0.5,
+      0.75,
+      0.9,
+      0.95,
+      1.0
+    ],
+    "source_knots": [
+      0.1654,
+      0.272255,
+      0.30805,
+      0.34285,
+      0.41145,
+      0.542775,
+      0.67782,
+      0.76563,
+      0.9185
+    ],
+    "target_knots": [
+      0.58,
+      0.792415,
+      0.83778,
+      0.9326,
+      1.0,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "sample_size": 288
+  },
+  "scene_mappings": {
+    "公益宣传": {
+      "input_metric": "center_saliency_ratio",
+      "target_metric": "legacy_center_focus",
+      "quantiles": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "source_knots": [
+        0.2229,
+        0.232685,
+        0.2809,
+        0.331375,
+        0.38415,
+        0.4423,
+        0.4955,
+        0.518435,
+        0.5609
+      ],
+      "target_knots": [
+        0.58,
+        0.795935,
+        0.81234,
+        0.911425,
+        0.99395,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sample_size": 20,
+      "scope": "scene"
+    },
+    "教育校园宣传": {
+      "input_metric": "center_saliency_ratio",
+      "target_metric": "legacy_center_focus",
+      "quantiles": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "source_knots": [
+        0.2412,
+        0.2602,
+        0.26714,
+        0.2959,
+        0.3303,
+        0.35375,
+        0.43648,
+        0.488225,
+        0.5001
+      ],
+      "target_knots": [
+        0.8869,
+        0.889465,
+        0.89617,
+        0.936625,
+        0.97675,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sample_size": 20,
+      "scope": "scene"
+    },
+    "旅游宣传": {
+      "input_metric": "center_saliency_ratio",
+      "target_metric": "legacy_center_focus",
+      "quantiles": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "source_knots": [
+        0.1654,
+        0.272255,
+        0.30805,
+        0.34285,
+        0.41145,
+        0.542775,
+        0.67782,
+        0.76563,
+        0.9185
+      ],
+      "target_knots": [
+        0.58,
+        0.792415,
+        0.83778,
+        0.9326,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sample_size": 288,
+      "scope": "global_fallback",
+      "scene_sample_size": 14
+    },
+    "活动宣传海报": {
+      "input_metric": "center_saliency_ratio",
+      "target_metric": "legacy_center_focus",
+      "quantiles": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "source_knots": [
+        0.2441,
+        0.3088,
+        0.31278,
+        0.3363,
+        0.348,
+        0.3835,
+        0.41476,
+        0.43104,
+        0.454
+      ],
+      "target_knots": [
+        0.8292,
+        0.85548,
+        0.88424,
+        0.9519,
+        0.9893,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sample_size": 29,
+      "scope": "scene"
+    },
+    "电商商品广告": {
+      "input_metric": "center_saliency_ratio",
+      "target_metric": "legacy_center_focus",
+      "quantiles": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "source_knots": [
+        0.1838,
+        0.256675,
+        0.30422,
+        0.32115,
+        0.36915,
+        0.387225,
+        0.451,
+        0.492365,
+        0.5036
+      ],
+      "target_knots": [
+        0.768,
+        0.77692,
+        0.79969,
+        0.861275,
+        0.9871,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sample_size": 28,
+      "scope": "scene"
+    },
+    "短视频封面": {
+      "input_metric": "center_saliency_ratio",
+      "target_metric": "legacy_center_focus",
+      "quantiles": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "source_knots": [
+        0.1654,
+        0.272255,
+        0.30805,
+        0.34285,
+        0.41145,
+        0.542775,
+        0.67782,
+        0.76563,
+        0.9185
+      ],
+      "target_knots": [
+        0.58,
+        0.792415,
+        0.83778,
+        0.9326,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sample_size": 288,
+      "scope": "global_fallback",
+      "scene_sample_size": 12
+    },
+    "通用评分": {
+      "input_metric": "center_saliency_ratio",
+      "target_metric": "legacy_center_focus",
+      "quantiles": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        0.9,
+        0.95,
+        1.0
+      ],
+      "source_knots": [
+        0.1666,
+        0.31972,
+        0.33952,
+        0.401,
+        0.5014,
+        0.638,
+        0.7542,
+        0.8188,
+        0.9185
+      ],
+      "target_knots": [
+        0.61,
+        0.7685,
+        0.83574,
+        0.9457,
+        1.0,
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "sample_size": 165,
+      "scope": "scene"
+    }
+  }
+}
